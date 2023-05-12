@@ -1,0 +1,24 @@
+{
+  "name": "ospin-assignment",
+  "version": "1.0.0",
+  "description": "This is a take home assessment test for ospin",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adilnesmith/ospin-assignment.git"
+  },
+  "keywords": [
+    "ospin",
+    "assignment",
+    "assessment"
+  ],
+  "author": "Adil Peter",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adilnesmith/ospin-assignment/issues"
+  },
+  "homepage": "https://github.com/adilnesmith/ospin-assignment#readme"
+}
