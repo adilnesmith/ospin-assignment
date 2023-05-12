@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/adilnesmith/ospin-assignment/issues"
   },
-  "homepage": "https://github.com/adilnesmith/ospin-assignment#readme"
+  "homepage": "https://github.com/adilnesmith/ospin-assignment#readme",
+  "dependencies": {
+    "csv-parser": "^3.0.0"
+  }
 }
