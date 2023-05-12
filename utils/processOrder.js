@@ -25,7 +25,7 @@ function processOrder(order) {
     // Check if the bonus ratio is greater than 0 and if the rebate structure contains the organ
     if (bonus_ratio > 0 && rebateStructure.hasOwnProperty(organ)) {
         // Retrieve the bonus organs for the specified organ from the rebate structure
-        const bonusOrgans = rebateStructure[organ].bonus;
+        const bonusOrgans = rebateStructure[organ]?.bonus;
 
         // Iterate over each bonus organ and calculate the number of bonus organs earned
         for (const bonusOrgan in bonusOrgans) {
