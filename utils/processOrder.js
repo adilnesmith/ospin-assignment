@@ -9,14 +9,12 @@ const rebateStructure = require('../promotion/schemes');
 */
 function processOrder(order) {
     // Extract the organ, cash, price, and bonus ratio from the order
-    const organ = order.organ;
-    const cash = parseInt(order.cash);
-    const price = parseInt(order.price);
-    const bonusRatio = parseInt(order.bonus_ratio);
+    const { organ, cash, price, bonus_ratio } = order;
 
     // Calculate the number of organs purchased and the number of bonuses earned
-    const purchased = Math.floor(cash / price);
-    const bonuses = Math.floor(purchased / bonusRatio);
+    const purchased = Math.floor(parseInt(cash) / parseInt(price));
+
+    const bonuses = Math.floor(purchased / bonus_ratio);
 
     // Initialize the result object with initial values of 0
     const result = { heart: 0, liver: 0, lung: 0 };
@@ -25,7 +23,7 @@ function processOrder(order) {
     result[organ] = purchased;
 
     // Check if the bonus ratio is greater than 0 and if the rebate structure contains the organ
-    if (bonusRatio > 0 && rebateStructure.hasOwnProperty(organ)) {
+    if (bonus_ratio > 0 && rebateStructure.hasOwnProperty(organ)) {
         // Retrieve the bonus organs for the specified organ from the rebate structure
         const bonusOrgans = rebateStructure[organ].bonus;
 
