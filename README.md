@@ -10,7 +10,7 @@ This application processes customer orders for Organ Spare Parts Industries and 
 
 1- Clone the repository:
 
-``` https://github.com/adilnesmith/ospin-assignment.git```
+```https://github.com/adilnesmith/ospin-assignment.git```
 
 2- Install the dependencies:
 

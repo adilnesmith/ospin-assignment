@@ -1,7 +1,7 @@
 {
   "name": "ospin-assignment",
   "version": "1.0.0",
-  "description": "This is a take home assessment test for ospin",
+  "description": "Organ Spare Parts Industries - Rebate System This application processes customer orders for Organ Spare Parts Industries and calculates the total number of products the customer will receive based on a rebate structure. The rebate structure is defined in the code and can be modified to accommodate different promotion schemes.",
   "main": "index.js",
   "scripts": {
     "test": "npm test"
