@@ -34,9 +34,10 @@ function processOrder(order) {
             result[bonusOrgan] = bonusOrgans[bonusOrgan] * bonuses;
         }
     }
-
     // Output the number of each organ purchased
-    console.log(`heart ${result.heart}, liver ${result.liver}, lung ${result.lung}`);
+    process.stdout.write(
+        `heart ${result.heart}, liver ${result.liver}, lung ${result.lung}\n`
+    );
 }
 
 module.exports = processOrder;
